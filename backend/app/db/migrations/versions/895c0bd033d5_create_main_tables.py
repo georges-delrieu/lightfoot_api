@@ -16,8 +16,8 @@ down_revision = None
 branch_labels = None
 depends_on = None
 
-def create_footprints_table() -> None:
-    op.create_table(
+def upgrade() -> None:
+        op.create_table(
         "footprints",
         sa.Column("id", sa.Integer, primary_key = True),
         sa.Column("category", sa.Text, nullable = False),
@@ -25,9 +25,6 @@ def create_footprints_table() -> None:
         sa.Column("item", sa.Text, nullable = False),
         sa.Column("footprint", sa.Numeric(10,2), nullable = False),
     )
-
-def upgrade() -> None:
-    create_footprints_table()
 
 def downgrade() -> None:
     op.drop_table("footprints")
