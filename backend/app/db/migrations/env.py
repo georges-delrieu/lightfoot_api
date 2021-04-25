@@ -48,6 +48,7 @@ def run_migrations_offline() -> None:
     
     with alembic.context.begin_transaction():
         alembic.context.run_migrations()
+        
 if alembic.context.is_offline_mode():
     logger.info("Running migrations offline")
     run_migrations_offline()
