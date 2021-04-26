@@ -5,8 +5,9 @@ from fastapi import FastAPI
 
 from tests.conftests import client, app, db, apply_migrations
 
-from starlette.status import HTTP_404_NOT_FOUND, HTTP_422_UNPROCESSABLE_ENTITY, HTTP_201_CREATED
+from starlette.status import HTTP_404_NOT_FOUND, HTTP_422_UNPROCESSABLE_ENTITY, HTTP_201_CREATED, HTTP_200_OK
 
+from app.models.footprints import FootprintCreate, FootprintInDB   
 from app.models.footprints import FootprintCreate
 
 #decorate all tests with @pytest.mark.asyncio
@@ -61,3 +62,11 @@ class TestCreateFootprint:
             app.url_path_for("footprints:create-footprints"), json={"new_footprint": invalid_payload}
         )
         assert res.status_code == status_code
+        
+    
+    class TestGetFootprint:
+        async def test_get_footprint_by_id(self, app: FastAPI, client: AsyncClient) -> None:
+            res = await client.get(app.url_path_for("footprints:get-footprint-by-id", id = 1))
+            assert res.status_code == HTTP_200_OK
+            footprint = FootprintInDB(**res.json())
+            assert footprint.id ==1

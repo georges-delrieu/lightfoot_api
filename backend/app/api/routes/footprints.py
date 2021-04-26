@@ -1,7 +1,7 @@
 from typing import List
 
-from fastapi import APIRouter, Body, Depends
-from starlette.status import HTTP_201_CREATED
+from fastapi import APIRouter, Body, Depends, HTTPException
+from starlette.status import HTTP_201_CREATED, HTTP_404_NOT_FOUND
 
 from app.models.footprints import FootprintCreate, FootprintPublic
 from app.db.repositories.footprints import FootprintsRepository
@@ -25,3 +25,14 @@ async def create_new_footprints(
     created_footprint = await footprints_repo.create_footprint(new_footprint=new_footprint)
     
     return created_footprint
+
+@router.get("/{id}/", response_model = FootprintPublic, name="footprints:get-footprint-by-id")
+async def get_footprint_by_id(
+    id: int, footprints_repo: FootprintsRepository = Depends(get_repository(FootprintsRepository))
+) -> FootprintPublic:
+    footprint = await footprints_repo.get_footprint_by_id(id=id)
+    
+    if not footprint:
+        raise HTTPException(status_code = HTTP_404_NOT_FOUND, detail="No Footprint found with that id")
+    
+    return footprint
