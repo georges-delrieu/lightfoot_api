@@ -8,6 +8,9 @@ from fastapi import FastAPI
 from httpx import AsyncClient
 from databases import Database
 
+from app.models.footprints import FootprintCreate, FootprintInDB
+from app.db.repositories.footprints import FootprintsRepository
+
 import alembic
 from alembic.config import Config
 
@@ -44,3 +47,16 @@ async def client(app: FastAPI) -> AsyncClient:
         headers={"Content-Type": "applications/json"}
         ) as client:
             yield client
+            
+#testing create
+@pytest.fixture
+async def test_footprint(db:Database) -> FootprintInDB:
+    footprint_repo = FootprintsRepository(db)
+    new_footprint = FootprintCreate(
+        category="fake category",
+        subcategory= "fake subcategory",
+        item = "fake item",
+        footprint=420
+    )
+    
+    return await footprint_repo.create_footprint(new_footprint=new_footprint)
