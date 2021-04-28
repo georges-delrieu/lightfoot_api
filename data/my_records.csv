@@ -1,151 +1,151 @@
-id,category,subcategory,item,footprint
-0,Articles de sport,Ballon,un Ballon de Basket-ball,4.6
-1,Articles de sport,Ballon,un Ballon de Football,4.12
-2,Articles de sport,Ballon,un Ballon de Volley-ball,2.25
-3,Articles de sport,Panier de basket,un Panier extérieur avec socle en béton,1900.0
-4,Articles de sport,Panier de basket,un Panier intérieur avec socle en béton,1700.0
-5,Articles de sport,Equitation,une Bombe d'équitation,2.6
-6,Articles de sport,Equitation,une Cravache,2.4
-7,Articles de sport,Equitation,un Harnais,24.0
-8,Articles de sport,Equitation,un Pantalon d'équitation,4.0
-9,Articles de sport,Equitation,une Selle d'équitation,160.0
-10,Articles de sport,Equitation,une Veste d'équitation,4.0
-11,Articles de sport,Escrime,une Épée d'escrime,2.2
-12,Articles de sport,Escrime,un Fleuret d'escrime,1.6
-13,Articles de sport,Escrime,un Masque d'escrime,7.7
-14,Articles de sport,Escrime,un Pantalon d'escrime,6.4
-15,Articles de sport,Escrime,un Sabre d'escrime,1.6
-16,Articles de sport,Golf,une Balle de golf,0.3
-17,Articles de sport,Golf,un Club de golf,3.7
-18,Articles de sport,Gymnastique,une Paire de chaussons de gym,2.0
-19,Articles de sport,Gymnastique,un Tatami de gymnastique,62.0
-20,Articles de sport,Ballon,un Ballon de Handball,2.5
-21,Articles de sport,Handball,un Short 100% PE,0.9
-22,Articles de sport,Judo,un Kimono,16.0
-23,Articles de sport,Judo,un Pantalon de kimono,5.0
-24,Articles de sport,Judo,un Tatami de judo,140.0
-25,Articles de sport,Natation,une Paire de Lunettes de natation,0.2
-26,Articles de sport,Natation,un Maillot de natation,0.4
-27,Articles de sport,Natation,un Pince nez de natation,0.04
-28,Articles de sport,Plongée,un Masque de plongée,0.4
-29,Articles de sport,Plongée,un Tuba de plongée,0.1
-30,Articles de sport,Tennis,une Raquette de tennis,20.2
-31,Articles de sport,Sac à dos,un Sac d'écolier,9.19
-32,Articles de sport,Sac à dos,un Sac de randonnée,6.01
-33,Articles de sport,Sport d'hiver,un Casque de ski,1.2
-34,Articles de sport,Sport d'hiver,une Paire de skis,15.0
-35,Articles de sport,Sport d'hiver,un Snowboard,8.6
-36,Articles de sport,Sport nautique,une Planche à voile,220.0
-37,Articles de sport,Tennis,une Balle de tennis,0.2
-38,Articles de sport,Tout sport,un Maillot tout sport,1.0
-39,Articles de sport,Tout sport,une Paire de chaussettes tout sport,0.3
-40,Articles de sport,Tout sport,un Short tout sport,0.8
-41,Articles de sport,Volley,une Paire de Genouillères de volley,1.1
-42,Electroménager,Aspirateur ménager,un Aspirateur avec sac,47.3
-43,Electroménager,Aspirateur ménager,un Aspirateur sans sac,52.4
-44,Electroménager,Aspirateur professionnel,un Aspirateur à traineaux,83.0
-45,Electroménager,Congélateur,un Congélateur armoire,415.0
-46,Electroménager,Congélateur,un Congélateur coffre,301.0
-47,Electroménager,Four,un Four électrique encastrable,217.0
-48,Electroménager,Four,un Four professionnel,865.0
-49,Electroménager,Gazinière,une Gazinière,163.0
-50,Electroménager,Lave-linge,un Lave-linge capacité 5 kg,305.0
-51,Electroménager,Lave-linge,un Lave-linge capacité 7kg,342.0
-52,Electroménager,Lave-vaisselle,un Lave-vaisselle compact,235.0
-53,Electroménager,Lave-vaisselle,un Lave-vaisselle professionnel,961.0
-54,Electroménager,Lave-vaisselle,un Lave-vaisselle standard,271.0
-55,Electroménager,Machine à pain,une Machine à pain standard,53.1
-56,Electroménager,Micro-onde,un Micro-onde standard,98.4
-57,Electroménager,Mini-four,un Mini-four électrique,82.7
-58,Electroménager,Réfrigérateur,un Réfrigérateur combiné,257.0
-59,Electroménager,Réfrigérateur,un Réfrigérateur mini-bar,87.6
-60,Electroménager,Réfrigétateur,un Réfrigérateur 1 grande porte,300.0
-61,Electroménager,Robot multifonction,un Robot standard,41.3
-62,Electroménager,Sèche-linge,un Sèche-linge à évacuation,266.0
-63,Electroménager,Sèche-linge,un Sèche-linge à condensation,302.0
-64,Electroménager,Sèche-linge,un Sèche-linge à pompe à chaleur,302.0
-65,Electroménager,Yaourtière,une Yaourtière 8 pots,21.7
-66,Informatique et équipements électroniques,Appareil photo,un Appareil photo compact,24.4
-67,Informatique et équipements électroniques,Appareil photo,un Appareil photo hybride,29.0
-68,Informatique et équipements électroniques,Appareil photo,un Appareil photo reflex,30.6
-69,Informatique et équipements électroniques,Baies de disques,une Baie de disques standard,15.5
-70,Informatique et équipements électroniques,Baladeurs numériques,un Baladeur non-tactile,1.98
-71,Informatique et équipements électroniques,Baladeurs numériques,un Baladeur tactile,7.2
-72,Informatique et équipements électroniques,Barre de son,une Barre de son standard,40.2
-73,Informatique et équipements électroniques,Cadran photo,un Cadran photo numérique,40.2
-74,Informatique et équipements électroniques,Console vidéo,une Console de salon,73.7
-75,Informatique et équipements électroniques,Console vidéo,une Console portable,30.8
-76,Informatique et équipements électroniques,Décodeur,un Décodeur standard,60.9
-77,Informatique et équipements électroniques,DSL,un DSL haut débit,61.3
-78,Informatique et équipements électroniques,Ecran,un Écran 21.5 pouces,222.0
-79,Informatique et équipements électroniques,Ecran,un Écran 23.8 pouces,248.0
-80,Informatique et équipements électroniques,Enceinte,une Enceinte active Bluetooth,8.98
-81,Informatique et équipements électroniques,Home cinéma,un Home cinéma standard,133.0
-82,Informatique et équipements électroniques,Imprimante,une Imprimante jet d'encre,88.2
-83,Informatique et équipements électroniques,Imprimante,une Imprimante laser,197.0
-84,Informatique et équipements électroniques,Imprimante,une Imprimante multi-fonction,87.9
-85,Informatique et équipements électroniques,Liseuse,une Liseuse non rétro-éclairée,38.3
-86,Informatique et équipements électroniques,Liseuse,une Liseuse rétro-éclairée,44.9
-87,Informatique et équipements électroniques,Modem,un Modem fibre,82.9
-88,Informatique et équipements électroniques,Montre connectée,une Montre connectée standard,9.72
-89,Informatique et équipements électroniques,Ordinateur,un Ordinateur fixe,296.0
-90,Informatique et équipements électroniques,Ordinateur,un Ordinateur portable,156.0
-91,Informatique et équipements électroniques,Photocopieurs,un Photocopieur standard,2935.0
-92,Informatique et équipements électroniques,Smartphone,un Smartphone standard,16.5
-93,Informatique et équipements électroniques,Smartphone,un Smartphone de 5 pouces,32.8
-94,Informatique et équipements électroniques,Smartphone,""un Smartphone de moins de 4.5 pouces"",27.6
-95,Informatique et équipements électroniques,Smartphone,""un Smartphone de plus de 5.5 pouces"",39.1
-96,Informatique et équipements électroniques,Stéréo,une Stéréo classique,123.0
-97,Informatique et équipements électroniques,Tablette,une Tablette classique,63.2
-98,Informatique et équipements électroniques,Tablette,une Tablette détachable,82.2
-99,Informatique et équipements électroniques,Tablette,une Tablette mini,40.9
-100,Informatique et équipements électroniques,Télécommande,une Télécommande universelle sans piles,2.8
-101,Informatique et équipements électroniques,Télévision,une Télévision 30-40 pouces,340.0
-102,Informatique et équipements électroniques,Télévision,une Télévision 40-49 pouces,371.0
-103,Informatique et équipements électroniques,Télévision,une Télévision 49 pouces,500.0
-104,Informatique et équipements électroniques,Vidéo projecteur,un Projecteur standard,94.0
-105,Mobilier,Armoire,une Armoire standard,907.0
-106,Mobilier,Cadre de lit,un Cadre de lit standard,115.0
-107,Mobilier,Canapé,un Canapé convertible,198.0
-108,Mobilier,Canapé,un Canapé en cuir,182.0
-109,Mobilier,Canapé,un Canapé en textile,179.0
-110,Mobilier,Chaise,une Chaise en bois,18.6
-111,Mobilier,Chaise,une Chaise en bois et textile,24.8
-112,Mobilier,Chaise,une Chaise en plastique,34.4
-113,Mobilier,Matelas,un Matelas en mousse,284.0
-114,Mobilier,Matelas,un Matelas à ressorts,232.0
-115,Mobilier,Salon de jardin,un Salon en bois,69.2
-116,Mobilier,Salon de jardin,un Salon en métal,238.0
-117,Mobilier,Salon de jardin,un Salon en résine tressée,260.0
-118,Mobilier,Sommier,un Sommier à lattes fixes,44.2
-119,Mobilier,Sommier,un Sommier tapissier,103.0
-120,Mobilier,Table,une Table en bois massif,80.2
-121,Mobilier,Table,une Table standard,60.1
-122,Papier,Livre,un Livre de 300 g,1.1
-123,Papier,Ramette de papier blanc,une Ramette 80g/m² A4,2.29
-124,Textile et habillement,Chaussures,une Paire de chaussures de sport,18.7
-125,Textile et habillement,Chaussures,une Paire de chaussure en cuir,13.4
-126,Textile et habillement,Chaussures,une Paire de chaussures en tissu,17.3
-127,Textile et habillement,Chemise,une Chemise en coton,11.2
-128,Textile et habillement,Chemise,une Chemise en viscose,10.2
-129,Textile et habillement,Jean,une paire de Jeans en coton,23.2
-130,Textile et habillement,Manteau,un Manteau standard,85.8
-131,Textile et habillement,Polaire,une Polaire en PES recyclé,23.8
-132,Textile et habillement,Polo,un Polo en coton,8.2
-133,Textile et habillement,Pull,un Pull en acrylique,25.5
-134,Textile et habillement,Pull,un Pull en coton recyclé,8.1
-135,Textile et habillement,Pull,un Pull en laine,52.9
-136,Textile et habillement,Robe,une Robe en coton,49.8
-137,Textile et habillement,Robe,une Robe en polyester,51.9
-138,Textile et habillement,Robe,une Robe en viscose,44.9
-139,Textile et habillement,Sweat,un Sweat en coton,27.4
-140,Textile et habillement,T-shirt,un T-shirt en coton,5.2
-141,Textile et habillement,T-shirt,un T-shirt en polyester,5.5
-142,Textile et habillement,Veste,une Veste en simili cuir,24.0
-143,Textile et habillement,Veste,une Veste imper-respirante (anorak),38.7
-144,Véhicules,Voiture,une Citadine essence - diesel,6200.0
-145,Véhicules,Voiture,une Citadine hybride,8900.0
-146,Véhicules,Voiture,une Citadine électrique à étendeur d’autonomie (range extender),10400.0
-147,Véhicules,Voiture,une Citadine électrique,10200.0
-148,Véhicules,Voiture,une Berline essence - diesel,7100.0
-149,Véhicules,Voiture,une Berline électrique,18700.0
+category,subcategory,item,footprint
+Articles de sport,Ballon,un Ballon de Basket-ball,4.6
+Articles de sport,Ballon,un Ballon de Football,4.12
+Articles de sport,Ballon,un Ballon de Volley-ball,2.25
+Articles de sport,Panier de basket,un Panier extérieur avec socle en béton,1900.0
+Articles de sport,Panier de basket,un Panier intérieur avec socle en béton,1700.0
+Articles de sport,Equitation,une Bombe d'équitation,2.6
+Articles de sport,Equitation,une Cravache,2.4
+Articles de sport,Equitation,un Harnais,24.0
+Articles de sport,Equitation,un Pantalon d'équitation,4.0
+Articles de sport,Equitation,une Selle d'équitation,160.0
+Articles de sport,Equitation,une Veste d'équitation,4.0
+Articles de sport,Escrime,une Épée d'escrime,2.2
+Articles de sport,Escrime,un Fleuret d'escrime,1.6
+Articles de sport,Escrime,un Masque d'escrime,7.7
+Articles de sport,Escrime,un Pantalon d'escrime,6.4
+Articles de sport,Escrime,un Sabre d'escrime,1.6
+Articles de sport,Golf,une Balle de golf,0.3
+Articles de sport,Golf,un Club de golf,3.7
+Articles de sport,Gymnastique,une Paire de chaussons de gym,2.0
+Articles de sport,Gymnastique,un Tatami de gymnastique,62.0
+Articles de sport,Ballon,un Ballon de Handball,2.5
+Articles de sport,Handball,un Short 100% PE,0.9
+Articles de sport,Judo,un Kimono,16.0
+Articles de sport,Judo,un Pantalon de kimono,5.0
+Articles de sport,Judo,un Tatami de judo,140.0
+Articles de sport,Natation,une Paire de Lunettes de natation,0.2
+Articles de sport,Natation,un Maillot de natation,0.4
+Articles de sport,Natation,un Pince nez de natation,0.04
+Articles de sport,Plongée,un Masque de plongée,0.4
+Articles de sport,Plongée,un Tuba de plongée,0.1
+Articles de sport,Tennis,une Raquette de tennis,20.2
+Articles de sport,Sac à dos,un Sac d'écolier,9.19
+Articles de sport,Sac à dos,un Sac de randonnée,6.01
+Articles de sport,Sport d'hiver,un Casque de ski,1.2
+Articles de sport,Sport d'hiver,une Paire de skis,15.0
+Articles de sport,Sport d'hiver,un Snowboard,8.6
+Articles de sport,Sport nautique,une Planche à voile,220.0
+Articles de sport,Tennis,une Balle de tennis,0.2
+Articles de sport,Tout sport,un Maillot tout sport,1.0
+Articles de sport,Tout sport,une Paire de chaussettes tout sport,0.3
+Articles de sport,Tout sport,un Short tout sport,0.8
+Articles de sport,Volley,une Paire de Genouillères de volley,1.1
+Electroménager,Aspirateur ménager,un Aspirateur avec sac,47.3
+Electroménager,Aspirateur ménager,un Aspirateur sans sac,52.4
+Electroménager,Aspirateur professionnel,un Aspirateur à traineaux,83.0
+Electroménager,Congélateur,un Congélateur armoire,415.0
+Electroménager,Congélateur,un Congélateur coffre,301.0
+Electroménager,Four,un Four électrique encastrable,217.0
+Electroménager,Four,un Four professionnel,865.0
+Electroménager,Gazinière,une Gazinière,163.0
+Electroménager,Lave-linge,un Lave-linge capacité 5 kg,305.0
+Electroménager,Lave-linge,un Lave-linge capacité 7kg,342.0
+Electroménager,Lave-vaisselle,un Lave-vaisselle compact,235.0
+Electroménager,Lave-vaisselle,un Lave-vaisselle professionnel,961.0
+Electroménager,Lave-vaisselle,un Lave-vaisselle standard,271.0
+Electroménager,Machine à pain,une Machine à pain standard,53.1
+Electroménager,Micro-onde,un Micro-onde standard,98.4
+Electroménager,Mini-four,un Mini-four électrique,82.7
+Electroménager,Réfrigérateur,un Réfrigérateur combiné,257.0
+Electroménager,Réfrigérateur,un Réfrigérateur mini-bar,87.6
+Electroménager,Réfrigétateur,un Réfrigérateur 1 grande porte,300.0
+Electroménager,Robot multifonction,un Robot standard,41.3
+Electroménager,Sèche-linge,un Sèche-linge à évacuation,266.0
+Electroménager,Sèche-linge,un Sèche-linge à condensation,302.0
+Electroménager,Sèche-linge,un Sèche-linge à pompe à chaleur,302.0
+Electroménager,Yaourtière,une Yaourtière 8 pots,21.7
+Informatique et équipements électroniques,Appareil photo,un Appareil photo compact,24.4
+Informatique et équipements électroniques,Appareil photo,un Appareil photo hybride,29.0
+Informatique et équipements électroniques,Appareil photo,un Appareil photo reflex,30.6
+Informatique et équipements électroniques,Baies de disques,une Baie de disques standard,15.5
+Informatique et équipements électroniques,Baladeurs numériques,un Baladeur non-tactile,1.98
+Informatique et équipements électroniques,Baladeurs numériques,un Baladeur tactile,7.2
+Informatique et équipements électroniques,Barre de son,une Barre de son standard,40.2
+Informatique et équipements électroniques,Cadran photo,un Cadran photo numérique,40.2
+Informatique et équipements électroniques,Console vidéo,une Console de salon,73.7
+Informatique et équipements électroniques,Console vidéo,une Console portable,30.8
+Informatique et équipements électroniques,Décodeur,un Décodeur standard,60.9
+Informatique et équipements électroniques,DSL,un DSL haut débit,61.3
+Informatique et équipements électroniques,Ecran,un Écran 21.5 pouces,222.0
+Informatique et équipements électroniques,Ecran,un Écran 23.8 pouces,248.0
+Informatique et équipements électroniques,Enceinte,une Enceinte active Bluetooth,8.98
+Informatique et équipements électroniques,Home cinéma,un Home cinéma standard,133.0
+Informatique et équipements électroniques,Imprimante,une Imprimante jet d'encre,88.2
+Informatique et équipements électroniques,Imprimante,une Imprimante laser,197.0
+Informatique et équipements électroniques,Imprimante,une Imprimante multi-fonction,87.9
+Informatique et équipements électroniques,Liseuse,une Liseuse non rétro-éclairée,38.3
+Informatique et équipements électroniques,Liseuse,une Liseuse rétro-éclairée,44.9
+Informatique et équipements électroniques,Modem,un Modem fibre,82.9
+Informatique et équipements électroniques,Montre connectée,une Montre connectée standard,9.72
+Informatique et équipements électroniques,Ordinateur,un Ordinateur fixe,296.0
+Informatique et équipements électroniques,Ordinateur,un Ordinateur portable,156.0
+Informatique et équipements électroniques,Photocopieurs,un Photocopieur standard,2935.0
+Informatique et équipements électroniques,Smartphone,un Smartphone standard,16.5
+Informatique et équipements électroniques,Smartphone,un Smartphone de 5 pouces,32.8
+Informatique et équipements électroniques,Smartphone,""un Smartphone de moins de 4.5 pouces"",27.6
+Informatique et équipements électroniques,Smartphone,""un Smartphone de plus de 5.5 pouces"",39.1
+Informatique et équipements électroniques,Stéréo,une Stéréo classique,123.0
+Informatique et équipements électroniques,Tablette,une Tablette classique,63.2
+Informatique et équipements électroniques,Tablette,une Tablette détachable,82.2
+Informatique et équipements électroniques,Tablette,une Tablette mini,40.9
+Informatique et équipements électroniques,Télécommande,une Télécommande universelle sans piles,2.8
+Informatique et équipements électroniques,Télévision,une Télévision 30-40 pouces,340.0
+Informatique et équipements électroniques,Télévision,une Télévision 40-49 pouces,371.0
+Informatique et équipements électroniques,Télévision,une Télévision 49 pouces,500.0
+Informatique et équipements électroniques,Vidéo projecteur,un Projecteur standard,94.0
+Mobilier,Armoire,une Armoire standard,907.0
+Mobilier,Cadre de lit,un Cadre de lit standard,115.0
+Mobilier,Canapé,un Canapé convertible,198.0
+Mobilier,Canapé,un Canapé en cuir,182.0
+Mobilier,Canapé,un Canapé en textile,179.0
+Mobilier,Chaise,une Chaise en bois,18.6
+Mobilier,Chaise,une Chaise en bois et textile,24.8
+Mobilier,Chaise,une Chaise en plastique,34.4
+Mobilier,Matelas,un Matelas en mousse,284.0
+Mobilier,Matelas,un Matelas à ressorts,232.0
+Mobilier,Salon de jardin,un Salon en bois,69.2
+Mobilier,Salon de jardin,un Salon en métal,238.0
+Mobilier,Salon de jardin,un Salon en résine tressée,260.0
+Mobilier,Sommier,un Sommier à lattes fixes,44.2
+Mobilier,Sommier,un Sommier tapissier,103.0
+Mobilier,Table,une Table en bois massif,80.2
+Mobilier,Table,une Table standard,60.1
+Papier,Livre,un Livre de 300 g,1.1
+Papier,Ramette de papier blanc,une Ramette 80g/m² A4,2.29
+Textile et habillement,Chaussures,une Paire de chaussures de sport,18.7
+Textile et habillement,Chaussures,une Paire de chaussure en cuir,13.4
+Textile et habillement,Chaussures,une Paire de chaussures en tissu,17.3
+Textile et habillement,Chemise,une Chemise en coton,11.2
+Textile et habillement,Chemise,une Chemise en viscose,10.2
+Textile et habillement,Jean,une paire de Jeans en coton,23.2
+Textile et habillement,Manteau,un Manteau standard,85.8
+Textile et habillement,Polaire,une Polaire en PES recyclé,23.8
+Textile et habillement,Polo,un Polo en coton,8.2
+Textile et habillement,Pull,un Pull en acrylique,25.5
+Textile et habillement,Pull,un Pull en coton recyclé,8.1
+Textile et habillement,Pull,un Pull en laine,52.9
+Textile et habillement,Robe,une Robe en coton,49.8
+Textile et habillement,Robe,une Robe en polyester,51.9
+Textile et habillement,Robe,une Robe en viscose,44.9
+Textile et habillement,Sweat,un Sweat en coton,27.4
+Textile et habillement,T-shirt,un T-shirt en coton,5.2
+Textile et habillement,T-shirt,un T-shirt en polyester,5.5
+Textile et habillement,Veste,une Veste en simili cuir,24.0
+Textile et habillement,Veste,une Veste imper-respirante (anorak),38.7
+Véhicules,Voiture,une Citadine essence - diesel,6200.0
+Véhicules,Voiture,une Citadine hybride,8900.0
+Véhicules,Voiture,une Citadine électrique à étendeur d’autonomie (range extender),10400.0
+Véhicules,Voiture,une Citadine électrique,10200.0
+Véhicules,Voiture,une Berline essence - diesel,7100.0
+Véhicules,Voiture,une Berline électrique,18700.0

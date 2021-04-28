@@ -66,7 +66,7 @@ class TestCreateFootprint:
     
     class TestGetFootprint:
         async def test_get_footprint_by_id(self, app: FastAPI, client: AsyncClient, test_footprint: FootprintInDB) -> None:
-            res = await client.get(app.url_path_for("footprints:get-footprint-by-id", id = test_footprint))
+            res = await client.get(app.url_path_for("footprints:get-footprint-by-id", id = test_footprint.id))
             assert res.status_code == HTTP_200_OK
             footprint = FootprintInDB(**res.json())
             assert footprint.id == test_footprint 

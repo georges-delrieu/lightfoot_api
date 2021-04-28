@@ -22,7 +22,7 @@ datafile = '../../../../../data/my_records.csv'
 
 def fill_data() -> None:
     op.execute(
-        f"COPY footprints FROM '{datafile}' DELIMITERS ',' CSV HEADER;",
+        f"COPY footprints(category, subcategory, item, footprint) FROM '{datafile}' DELIMITERS ',' CSV HEADER;",
         execution_options = None
     )
 
