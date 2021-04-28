@@ -65,11 +65,13 @@ class TestCreateFootprint:
         
     
     class TestGetFootprint:
-        async def test_get_footprint_by_id(self, app: FastAPI, client: AsyncClient, test_footprint: FootprintInDB) -> None:
+        async def test_get_footprint_by_id(
+            self, app: FastAPI, client: AsyncClient, test_footprint: FootprintInDB
+            ) -> None:
             res = await client.get(app.url_path_for("footprints:get-footprint-by-id", id = test_footprint.id))
             assert res.status_code == HTTP_200_OK
             footprint = FootprintInDB(**res.json())
-            assert footprint.id == test_footprint 
+            assert footprint == test_footprint 
             
         @pytest.mark.parametrize(
             "id, status_code",
@@ -102,10 +104,10 @@ class TestCreateFootprint:
             self, app: FastAPI, client:AsyncClient, test_footprint: FootprintInDB
         ) -> None:
             #delete
-            res = await client.delete(app.url_path_for("footprints:delete-footprint-by-id", id=id))
+            res = await client.delete(app.url_path_for("footprints:delete-footprint-by-id", id=test_footprint.id))
             assert res.status_code == HTTP_200_OK
             #check that has been deleted
-            res = await client.get(app.url_path_for("footprints: get-footprint-by-id"))
+            res = await client.get(app.url_path_for("footprints:get-footprint-by-id", id=test_footprint.id))
             assert res.status_code == HTTP_404_NOT_FOUND
             
         @pytest.mark.parametrize(
@@ -117,8 +119,8 @@ class TestCreateFootprint:
                 (None, 422),
             ),
         )
-        async def test_invalid_input_raises_error(
+        async def test_can_delete_footprint_successfully(
             self, app: FastAPI, client: AsyncClient, test_footprint: FootprintInDB, id:int, status_code:int
         ) -> None:
-            res = await client.delete(app.url_path_for("footprints: delete-footprint-by-id", id=id))
-            assert res.status_code == status.code
+            res = await client.delete(app.url_path_for("footprints:delete-footprint-by-id", id=id))
+            assert res.status_code == status_code
