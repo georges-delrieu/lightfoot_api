@@ -1,5 +1,8 @@
 from typing import List
 
+from fastapi import HTTPException
+from starlette.status import HTTP_400_BAD_REQUEST
+
 from app.db.repositories.base import BaseRepository
 from app.models.footprints import FootprintCreate, FootprintUpdate, FootprintInDB
 
@@ -10,7 +13,7 @@ CREATE_FOOTPRINT_QUERY = """
 """
     
 GET_FOOTPRINT_BY_ID_QUERY = """
-    SELECT category, subcategory, item, footprint
+    SELECT id, category, subcategory, item, footprint
     FROM footprints
     WHERE id = :id;
 """
@@ -18,6 +21,22 @@ GET_FOOTPRINT_BY_ID_QUERY = """
 GET_ALL_FOOTPRINTS_QUERY = """
     SELECT id, category, subcategory, item, footprint
     FROM footprints;
+"""
+
+UPDATE_FOOTPRINT_BY_ID_QUERY = """
+    UPDATE footprints
+    SET category = :category,
+        subcategory = :subcategory,
+        item = :item,
+        footprint = :footprint
+    WHERE id = :id
+    RETURNING id, category, subcategory, item, footprint;
+"""
+
+DELETE_FOOTPRINT_BY_ID_QUERY = """
+    DELETE FROM footprints
+    WHERE id = :id
+    RETURNING id;
 """
     
     
@@ -30,7 +49,7 @@ class FootprintsRepository(BaseRepository):
         
         return FootprintInDB(**footprint)
     
-    async def get_footprint_by_id(self, *, id:int) -> FootprintInDB:
+    async def get_footprint_by_id(self, *, id: int) -> FootprintInDB:
         footprint = await self.db.fetch_one(query=GET_FOOTPRINT_BY_ID_QUERY, values={"id":id})
         
         if not footprint:
@@ -42,3 +61,33 @@ class FootprintsRepository(BaseRepository):
         footprint_records = await self.db.fetch_all(query=GET_ALL_FOOTPRINTS_QUERY)
         
         return [FootprintInDB(**l) for l in footprint_records]
+    
+    async def update_footprint_by_id(self, *, id: int, footprint_update: FootprintUpdate) -> FootprintInDB:
+        footprint = await self.get_footprint_by_id(id=id)
+        
+        if not footprint:
+            return None
+        
+        footprint_update_params = footprint.copy(update=footprint_update.dict(exclude_unset= True))
+        if footprint_update_params.footprint is None:
+            raise HTTPException(status_code=HTTP_400_BAD_REQUEST, detail="Invalid footprint update -- cannot be None")
+
+        try:
+            updated_footprint = await self.db.fetch_one(
+                query=UPDATE_FOOTPRINT_BY_ID_QUERY, values=footprint_update_params.dict()
+            )
+            return FootprintInDB(**updated_footprint)
+        
+        except Exception as e:
+            print(e)
+            raise HTTPException(status_code=HTTP_400_BAD_REQUEST, detail="Invalid update")
+        
+    async def delete_footprint_by_id(self, *, id:int) -> int:
+        footprint = await self.get_footprint_by_id(id=id)
+                
+        if not footprint:
+            return None
+        
+        deleted_id = await self.db.execute(query=DELETE_FOOTPRINT_BY_ID_QUERY, values={"id":id})
+        
+        return deleted_id

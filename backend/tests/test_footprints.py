@@ -95,3 +95,30 @@ class TestCreateFootprint:
             assert len(res.json()) > 0
             footprints = [FootprintInDB(**l) for l in res.json()]
             assert test_footprint in footprints
+            
+            
+    class TestDeleteFootprint:
+        async def test_can_delete_footprint_successfully(
+            self, app: FastAPI, client:AsyncClient, test_footprint: FootprintInDB
+        ) -> None:
+            #delete
+            res = await client.delete(app.url_path_for("footprints:delete-footprint-by-id", id=id))
+            assert res.status_code == HTTP_200_OK
+            #check that has been deleted
+            res = await client.get(app.url_path_for("footprints: get-footprint-by-id"))
+            assert res.status_code == HTTP_404_NOT_FOUND
+            
+        @pytest.mark.parametrize(
+            "id, status_code",
+            (
+                (500,404),
+                (0, 422),
+                (-1, 422),
+                (None, 422),
+            ),
+        )
+        async def test_invalid_input_raises_error(
+            self, app: FastAPI, client: AsyncClient, test_footprint: FootprintInDB, id:int, status_code:int
+        ) -> None:
+            res = await client.delete(app.url_path_for("footprints: delete-footprint-by-id", id=id))
+            assert res.status_code == status.code

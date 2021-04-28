@@ -41,9 +41,21 @@ async def update_footprint_by_id(
     footprint_update: FootprintUpdate = Body(..., embed = True),
     footprints_repo: FootprintsRepository = Depends(get_repository(FootprintsRepository)),
 ) -> FootprintPublic:
-    updated_footprint = await footprints_repo.update_footprint_by_id()
+    updated_footprint = await footprints_repo.update_footprint_by_id(id=id, footprint_update=footprint_update)
     
     if not updated_footprint:
         raise HTTPException(status_code=HTTP_404_NOT_FOUND)
     
     return updated_footprint
+
+@router.delete("/{id}/", response_model=int, name="footprints:delete-footprint-by-id")
+async def delete_footprint_by_id(
+    id: int = Path(..., ge=1, title=" The ID of the footprint to delete"),
+    footprints_repo: FootprintsRepository = Depends(get_repository(FootprintsRepository)),
+) -> int:
+    deleted_id = await footprints_repo.delete_footprint_by_id(id=id)
+    
+    if not deleted_id:
+        raise HTTPException(status_code=HTTP_404_NOT_FOUND, detail="No footprint found with that id")
+    
+    return deleted_id
